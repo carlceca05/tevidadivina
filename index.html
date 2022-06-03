@@ -41,11 +41,15 @@
     }
         
         @media only screen and (min-width:900px) and (max-width:2000px) {
-            
+		.aparece{
+		display:none;
+		}
         }
 
         @media only screen and (min-width:100px) and (max-width:900px) {
-            
+            .desaparece{
+		display:none;
+		}
         }
 
         .arriba {
@@ -99,17 +103,23 @@
         </nav>
         <div class="container pb-4 pt-5">
             <div class="row">
+		    <div class="col-12 col-lg-3 d-block d-lg-block  ">
+                    <div class="d-flex justify-content-center">
+                        <img class="" src="img/tedivina.png" width="80%"  alt="">
+                    </div>
+
+                </div>
                 <div class="col-12 col-lg-7 ">
-                    <h3 class="text-warning pt-0 pt-lg-5 "> Sé promotor independiente  </h3>
+                    <h3 class="text-warning pt-0 pt-lg-5 "> Compra o vende Té Divina en México  </h3>
                     <h1 class=" text-white mulish"  style="font-weight: 900;"> Vender Té  Divina en México </h1>
                     <p class="text-warning "  style="font-size: 23px; font-weight: 500;" > Regístrate para ser distribuidor en tu ciudad  </p>
                     
                     <p class="text-white mb-5">Entérate como puedes mejorar tu salud con el mejor tratamiento desintoxicante y su vez generar ingresos extras.</p>
                     
-                    <a class="btn btn-warning  shadow mb-5 " href="#adquirir"   > Quiero vender </a>&nbsp;&nbsp;
-                    <a class="btn btn-light btn   shadow mb-5" href="#"  > Quiero comprar </a>
+                    <p  class="text-center text-lg-start "><a class="btn btn-warning  shadow mb-5 " href="#adquirir"   > Quiero vender </a>&nbsp;&nbsp;
+			    <a class="btn btn-light btn   shadow mb-5" href="#"  > Quiero comprar </a></p>
                 </div>
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-lg-3 d-none d-lg-block  ">
                     <div>
                         <img class="" src="img/tedivina.png" width="130%"  alt="">
                     </div>
@@ -131,7 +141,7 @@
     <!-- seccion 2 video-->
     <div class="container py-0 py-lg-4    otromasalto" >
         <div class="row pt-5 ">
-            <div class="col-md-5 col-sm-12 col-xs-12 ">
+            <div class="col-md-5 col-sm-12 col-xs-12 mb-3 mb-lg-0">
                 <!-- carrusel  -->
                 <div id="carousel2" class="carousel slide" data-bs-ride="carousel"
                     >
@@ -325,23 +335,23 @@
             <div class=""   style=" margin: 0 auto;">
 
             
-            <div class="row row-cols-2 row-cols-lg-4  pt-5">
-                <div class="col">
+            <div class="row row-cols-1 row-cols-lg-4  pt-5">
+                <div class="col mb-3">
                     <div class="d-flex justify-content-center">
                         <video class="" src="img/testimonio-1.mp4" height="400px"  width="auto"  controls>  </video>
                     </div>
                 </div>
-                <div class="col ">
+                <div class="col mb-3">
                     <div class="d-flex justify-content-center">
                         <video src="img/testimonio-2.mp4" height="400px"  width="auto" controls>  </video>
                     </div>
                 </div>
-                <div class="col ">
+                <div class="col mb-3">
                     <div class="d-flex justify-content-center">
                         <video src="img/testimonio-3.mp4" height="400px"  width="auto" controls>  </video>
                     </div>
                 </div>
-                <div class="col ">
+                <div class="col mb-3">
                     <div class="d-flex justify-content-center">
                         <video src="img/testimonio-4.mp4" height="400px"  width="auto" controls>  </video>
                     </div>
@@ -358,8 +368,8 @@
             <h2 class="mulish mb-4 text-uppercase text-center" style="font-weight: 900;" > El poder de los hongos medicinales</h2>
             <div class="row py-4">
                 <div class="col">
-                    <div>
-                        <img src="img/hongo.jpg" alt="">
+                    <div class="d-flex  justify-content-center mb-4">
+                        <img src="img/hongo.jpg"  width="100%" alt="">
                     </div>
                 </div>
                 <div class="col">
@@ -377,14 +387,14 @@
     <!--ingredientes-->
     <div class="container-fluid py-5 bg-primary">
         <div class="container  "   >
-            <div class="row">
+            <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col text-white">
                     <h2 class="mb-3  mulish text-uppercase" style="font-weight: 900;">Ingredientes naturales 100% organicos</h2>
                     <p class="">Su fórmula combina lo mejor de la naturaleza y en las cantidades perfectas: </p>
                     <div>
                         <div class="mb-4 bg-warning"  style="width: 80px; height: 6px;">    </div>
                     </div>
-                    <div class="row">
+                    <div class="row row-cols-1 row-cols-lg-2">
                         <div class="col">
                             <ul class="" style="list-style: none;"  >
                                
@@ -426,7 +436,7 @@
             <h2 class="mulish text-uppercase"  style="font-weight: 900;" >Beneficios probables para tu cuerpo  </h2>
             <h5  class="mulish text-primary mb-5 fw-normal"> Podría ayudar a tu cuerpo a deshacerse de los kilos de más </h5>
 
-                <div class="row">
+                <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col">
                         <ul class="mb-5"  style="list-style:none;" >
                             <li>  <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Mejora la digestión</li>
@@ -479,7 +489,7 @@
         <div class="container py-5">
             <h2 class="mulish text-center text-uppercase" style="font-weight: 900;">¿Como comprar el té divina?</h2>
             <h5 class="mulish text-primary text-center mb-5 fw-normal" >Un asesor se pondrá en contacto contigo para guiarte con tu compra y darte mas información</h5>
-            <div class="row">
+            <div class="row row-cols-1 row-cols-lg-3">
                 <div class="col ">
                     <div class="mb-4 d-flex justify-content-center"  >
                         <img src="img/mensaje.png" style="border-radius:100px;" width="150px" alt="">
