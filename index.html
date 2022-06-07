@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-   
     <title> Té Vida Divina </title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,11 +39,15 @@
     }
         
         @media only screen and (min-width:900px) and (max-width:2000px) {
-            
+		.aparece{
+		display:none;
+		}
         }
 
         @media only screen and (min-width:100px) and (max-width:900px) {
-            
+            .desaparece{
+		display:none;
+		}
         }
 
         .arriba {
@@ -87,30 +89,35 @@
                             <a class="nav-link  text-white fw-light small"  href="#registro">Registro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-light small" href="#requisitos">Comprar</a>
+                            <a class="nav-link text-white fw-light small" href="#comprar">Comprar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-light small" href="#requisitos">Beneficios</a>
+                            <a class="nav-link text-white fw-light small" href="#beneficios">Beneficios</a>
                         </li>
                        
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="container pb-4 pt-5">
+        <div class="container pb-4 pt-0 pt-lg-5">
             <div class="row">
+		    <div class="col-12 col-lg-3 aparece d-block d-lg-none   mb-3 ">
+                    <div class="d-flex justify-content-center">
+                        <img class="d-block d-lg-none" src="img/tedivina.png" width="80%"  alt="">
+                    </div>
+                </div>
                 <div class="col-12 col-lg-7 ">
-                    <h3 class="text-warning pt-0 pt-lg-5 "> Sé promotor independiente  </h3>
+                    <h3 class="text-warning pt-0 pt-lg-5 "> Compra o vende Té Divina en México  </h3>
                     <h1 class=" text-white mulish"  style="font-weight: 900;"> Vender Té  Divina en México </h1>
                     <p class="text-warning "  style="font-size: 23px; font-weight: 500;" > Regístrate para ser distribuidor en tu ciudad  </p>
                     
-                    <p class="text-white mb-5">Entérate como puedes mejorar tu salud con el mejor tratamiento desintoxicante y su vez generar ingresos extras.</p>
+                    <p class="text-white mb-5">Entérate como podrías mejorar tu salud con el mejor tratamiento desintoxicante y su vez generar ingresos extras.</p>
                     
-                    <a class="btn btn-warning  shadow mb-5 " href="#adquirir"   > Regístrate aquí </a>&nbsp;&nbsp;
-                    <a class="btn btn-light btn   shadow mb-5" href="#"  > Comienza a comprar </a>
+                    <p  class="text-center text-lg-start "><a class="btn btn-warning  shadow mb-5 " href="#vender"   > Quiero vender </a>&nbsp;&nbsp;
+			    <a class="btn btn-light btn   shadow mb-5" href="#comprar"  > Quiero comprar </a></p>
                 </div>
-                <div class="col-12 col-lg-3">
-                    <div>
+                <div class="col-12 col-lg-3 d-none d-lg-block desaparece  ">
+                    <div class="d-none d-lg-block">
                         <img class="" src="img/tedivina.png" width="130%"  alt="">
                     </div>
 
@@ -131,7 +138,7 @@
     <!-- seccion 2 video-->
     <div class="container py-0 py-lg-4    otromasalto" >
         <div class="row pt-5 ">
-            <div class="col-md-5 col-sm-12 col-xs-12 ">
+            <div class="col-md-5 col-sm-12 col-xs-12 mb-5 mb-lg-0">
                 <!-- carrusel  -->
                 <div id="carousel2" class="carousel slide" data-bs-ride="carousel"
                     >
@@ -165,6 +172,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+                <p class="pt-2 text-end" style="font-size: 10px;" > Testimonios de particulares, los resultados podrían variar. </p>
             </div>
             <div class="col-md-7 col-sm-12 col-xs-12">
                 <h2 class=" mulish text-uppercase" style="font-weight: 900;" >Tratamiento desintoxicante </h2>
@@ -172,26 +180,26 @@
                 <div>
                     <div class="mb-4 bg-primary"  style="width: 80px; height: 6px;">    </div>
                 </div>
-                <p class="  mb-4">Los beneficios de tomar Té Divina van más allá de la pérdida de peso, sus componentes hacen qye sea un verdadero potenciador de las funciones fisiológicas del organismo. No se trata de un laxante, diurético o quema grasa, sino de un purificante que elimina efectivamente las toxinas que se han acumulado en el cuerpo con el paso del tiempo. <br> <br> Los componentes herbales y completamente naturales que contiene cada filtrante del Té détox Divina ofrecen muchos beneficios. Desde la primera semana a tomarlo verás cómo hace efecto. </p>
+                <p class="  mb-4">Los beneficios de tomar Té Divina van más allá de la pérdida de peso, sus componentes hacen que sea un verdadero potenciador de las funciones fisiológicas del organismo. No se trata de un laxante, diurético o quema grasa, sino de un purificante que elimina efectivamente las toxinas que se han acumulado en el cuerpo con el paso del tiempo. <br> <br> Los componentes herbales y completamente naturales que contiene cada filtrante del Té detox Divina ofrecen muchos beneficios. Desde la primera semana a tomarlo verás cómo hace efecto. </p>
                 <a class="btn btn-primary btn   shadow mb-5" href="#registro"  > Comprar </a>
             </div>
         </div>
     </div>
     <!--tienfa-->
-    <div class="container-fluid ">
-        <div class="container py-5">
-            <h5 class=" text-center mulish" style="font-weight: 900;">  Te Divina Al Mejor Precio, GARANTIZADO </h5>
+    <div class="container-fluid "   id="comprar">
+        <div class="container py-3">
+            <h5 class=" text-center mulish" style="font-weight: 900;">  Té Divina Al Mejor Precio, GARANTIZADO </h5>
             <h2 class="text-center mulish text-uppercase"  style="font-weight: 900;">Adquiere tu primer tratamiento </h2>
-            <h4 class="text-primary mb-5 text-center  fw-normal">Comienza seleccionando tu pedido inicial</h4>
+            <h5 class="text-primary mb-5 text-center  fw-normal">Comienza seleccionando tu pedido inicial</h5>
             <div class=""  style="max-width:800px ; margin: 0 auto;">
-            <div class="row row-cols-1 row-cols-lg-3   ">
+            <div class="row row-cols-1 row-cols-lg-2 ">
                 <div class="col mb-3 d-flex justify-content-center">
                     <div class="card shadow p-3" style="width: 25rem;">
                         <div class="d-flex justify-content-center mb-2">
                             <img class="img-fluid lazyload"   data-src="img/te-divina-de-tox-1.jpeg" width="100%"  alt="Té Divina">
                         </div>
-                        <p class="text-center mb-2 text-primary"> Té Divina De-Tox 1 sobre + Envio GRATIS</p>
-                        <h5 class=" text-center mb-3 mulish">$420</h5>
+                        <p class="text-center mb-2 text-primary"> Té Divina De-Tox 1 sobre (para una semana) + Envío GRATIS</p>
+                        <h5 class=" text-center mb-3 mulish">$400</h5>
                         <!--<button class="btn btn-primary"   > COMPRAR </button>-->
                         <p class="text-center"><button type="button" class="btn btn-primary shadow" data-bs-toggle="modal" data-bs-target="#modal2" style="border-radius: 0; font-size: 0.8rem;">
                            COMPRAR
@@ -201,10 +209,10 @@
                 <div class="col mb-3 d-flex justify-content-center">
                     <div class="card shadow p-3" style="width: 25rem;">
                         <div class="d-flex justify-content-center mb-2">
-                            <img class="img-fluid lazyload" data-src="img/4-1.png" width="100%"  alt="">
+                            <img class="img-fluid lazyload" data-src="img/4-1.jpeg" width="100%"  alt="">
                         </div>
-                        <p class="text-center text-primary mb-2">Té Divina De-Tox 6 sobres</p>
-                        <h5 class=" text-center  mb-3 mulish">$1,575</h5>
+                        <p class="text-center text-primary mb-2">Té Divina De-Tox 6 sobres (6 semanas) </p>
+                        <h5 class=" text-center  mb-3 mulish">$1,600</h5>
                         <!--<button class="btn btn-primary"   > COMPRAR </button>-->
                         <p class="text-center"><button type="button" class="btn btn-primary shadow " data-bs-toggle="modal" data-bs-target="#modal2" style="border-radius: 0; font-size: 0.8rem;">
                            COMPRAR
@@ -212,31 +220,31 @@
                     </div>
                 </div>
                 <div class="col mb-3 d-flex justify-content-center">
-                    <div class="card shadow p-4" style="width: 20rem;">
+                    <div class="card shadow p-4" style="width: 25rem;">
                         <div class="d-flex justify-content-center mb-4">
-                            <img class="img-fluid lazyload"   data-src="img/5-2-.png" width="100%"  alt="">
+                            <img class="img-fluid lazyload"   data-src="img/5-2-.jpeg" width="100%"  alt="">
                         </div>
-                        <p class="text-center text-primary mb-2">Té Divina De-Tox 12 sobre</p>
-                        <h5 class=" text-center mb-3 mulish">$2,960</h5>
-                        <!--<button class="btn btn-primary"   > COMPRAR </button>-->
+                        <p class="text-center text-primary mb-2">Té Divina De-Tox 12 sobres (12 semanas) <br><br> </p>
+                        <h5 class=" text-center mb-3 mulish">$3,000</h5> 
                         <p class="text-center"><button type="button" class="btn btn-primary shadow" data-bs-toggle="modal" data-bs-target="#modal2" style="border-radius: 0; font-size: 0.8rem;">
                            COMPRAR
                             </button></p>
                     </div>
                 </div>
                 <div class="col mb-3 d-flex justify-content-center">
-                    <div class="card shadow p-4" style="width: 20rem;">
+                    <div class="card shadow p-4" style="width: 25rem;">
                         <div class="d-flex justify-content-center mb-4">
-                            <img class="img-fluid lazyload"   data-src="img/18-Sobres-1.png" width="100%"  alt="">
+                            <img class="img-fluid lazyload"   data-src="img/18-Sobres-1.jpeg" width="85%"  alt="">
                         </div>
-                        <p class="text-center text-primary mb-2"> Startet Bussiness Kit x Membresía-18 sobres Pack Té Divina</p>
-                        <h5 class=" text-center mb-3 mulish">$3,000</h5>
+                        <p class="text-center text-primary mb-2">Té Divina Starter Business Kit 18 sobres (18 semanas) </p>
+                        <h5 class=" text-center mb-3 mulish">$3,200</h5>
                         <!--<button class="btn btn-primary"   > COMPRAR </button>-->
                         <p class="text-center"><button type="button" class="btn btn-primary shadow" data-bs-toggle="modal" data-bs-target="#modal2" style="border-radius: 0; font-size: 0.8rem;">
                            COMPRAR
                             </button></p>
                     </div>
                 </div>
+                <!--
                 <div class="col mb-3 d-flex justify-content-center">
                     <div class="card shadow p-4" style="width: 20rem;">
                         <div class="d-flex justify-content-center mb-4">
@@ -244,12 +252,14 @@
                         </div>
                         <p class="text-center text-primary mb-2"> Kit Perdida de Peso Tratamiento completo 1 mes</p>
                         <h5 class=" text-center mb-3 mulish">$8,400</h5>
-                        <!--<button class="btn btn-primary"   > COMPRAR </button>-->
+                       
                         <p class="text-center"><button type="button" class="btn btn-primary shadow" data-bs-toggle="modal" data-bs-target="#modal2" style="border-radius: 0; font-size: 0.8rem;">
                            COMPRAR
                             </button></p>
                     </div>
                 </div>
+            -->
+                <!--
                 <div class="col mb-3 d-flex justify-content-center">
                     <div class="card shadow p-4" style="width: 20rem;">
                         <div class="d-flex justify-content-center mb-4">
@@ -257,14 +267,19 @@
                         </div>
                         <p class="text-center text-primary mb-2"> Bussiness Builder Pack #2-Membresía incluye 8 mese de Té Divina</p>
                         <h5 class=" text-center mb-3 mulish">$7,350</h5>
-                        <!--<button class="btn btn-primary"   > COMPRAR </button>-->
+                       
                         <p class="text-center"><button type="button" class="btn btn-primary shadow" data-bs-toggle="modal" data-bs-target="#modal2" style="border-radius: 0; font-size: 0.8rem;">
                            COMPRAR
                             </button></p>
                     </div>
                 </div>
+                -->
+            </div>
+            <div class="p-3 bg-primary text-white mt-4 text-center">
+                <h4 class="mulish fw-normal"> Regístrate como promotor y obtén el <strong class="text-warning"> Té Divina Starter Business Kit 18 sobres (18 semanas) </strong> a precio de promotor </h4>
             </div>
         </div>
+            
         </div>
     </div>
     <!--nueva ventana emergente-->
@@ -304,13 +319,6 @@
                         <img src="img/whatsapp.png"  width="80px"   alt="">
                     </div>
                     <p class="small text-center"> Envia un mensaje a nuestro whatsapp y uno de nuestros asesores te respondera para ayudarte con tu pedido  </p>
-
-
-
-
-
-
-
                 </div>
                 <div class="modal-footer">
                 </div>
@@ -321,32 +329,33 @@
     <div class="container-fluid py-5">
         <div class="container ">
             <h2 class="mulish text-center text-uppercase pb-2" style="font-weight: 900;"> Testimonios reales sobre el Té Divina</h2>
-            <h5 class="text-primary text-center"> Desintoxicarás tu organismo, así como: acelerar su metabolismo, mejorar su salud y obtener una mejor calidad de vida de forma 100% Natural. </h5>
+            <h5 class="text-primary text-center mulish fw-normal"> Desintoxicarás tu organismo, así como: acelerar su metabolismo, mejorar tu salud y obtener una mejor calidad de vida de forma 100% Natural. </h5>
             <div class=""   style=" margin: 0 auto;">
 
             
-            <div class="row row-cols-2 row-cols-lg-4  pt-5">
-                <div class="col">
+            <div class="row row-cols-1 row-cols-lg-4  pt-5">
+                <div class="col mb-3">
                     <div class="d-flex justify-content-center">
                         <video class="" src="img/testimonio-1.mp4" height="400px"  width="auto"  controls>  </video>
                     </div>
                 </div>
-                <div class="col ">
+                <div class="col mb-3">
                     <div class="d-flex justify-content-center">
                         <video src="img/testimonio-2.mp4" height="400px"  width="auto" controls>  </video>
                     </div>
                 </div>
-                <div class="col ">
+                <div class="col mb-3">
                     <div class="d-flex justify-content-center">
                         <video src="img/testimonio-3.mp4" height="400px"  width="auto" controls>  </video>
                     </div>
                 </div>
-                <div class="col ">
+                <div class="col mb-3">
                     <div class="d-flex justify-content-center">
                         <video src="img/testimonio-4.mp4" height="400px"  width="auto" controls>  </video>
                     </div>
                 </div>
             </div>
+            <p class="pt-2 text-end" style="font-size: 10px;" > Testimonios de particulares, los resultados podrían variar. </p>
         </div>
 
             
@@ -356,10 +365,10 @@
     <div class="container-fluid  pb-5 ">
         <div class="container py-5">
             <h2 class="mulish mb-4 text-uppercase text-center" style="font-weight: 900;" > El poder de los hongos medicinales</h2>
-            <div class="row py-4">
+            <div class="row row-cols-1 row-cols-lg-2 py-4">
                 <div class="col">
-                    <div>
-                        <img src="img/hongo.jpg" alt="">
+                    <div class="d-flex  justify-content-center mb-4">
+                        <img src="img/hongo.jpg"  width="100%" alt="">
                     </div>
                 </div>
                 <div class="col">
@@ -369,22 +378,29 @@
                         Las hierbas que contiene la Bebida desintoxicante fueron seleccionadas precisamente por los beneficios que aportan al organismo, se compone de 12 elementos naturales que actúan en conjunto para ofrecer el más potente desintoxicante que hayas imaginado. Extractos herbales, de frutas, hongos medicinales y fibra dietética. </p>
                         
                 </div>
-            </div>
-            <h5 class="text-primary text-center">¿Conoces a alguien que le gustaría perder de 4 a 7 libras con un producto 100% orgánico natural?
-                Si tu respuesta es "SI QUIERO", contactenos hoy!</h5>
+            </div> 
+            <h3 class="text-primary text-center fw-normal mulish mb-4">¿Conoces a alguien que le gustaría perder de 2 a 5 kilos con un producto 100% orgánico natural?
+                ¡Si tu respuesta es "SI QUIERO", Contáctanos y regístrate hoy mismo!</h3>
+                <p class="text-center"> <a class="btn btn-primary  " href="#registro"> Regístrate aqui  </a>  </p>
         </div>
     </div>
     <!--ingredientes-->
     <div class="container-fluid py-5 bg-primary">
         <div class="container  "   >
-            <div class="row">
+            <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col text-white">
                     <h2 class="mb-3  mulish text-uppercase" style="font-weight: 900;">Ingredientes naturales 100% organicos</h2>
                     <p class="">Su fórmula combina lo mejor de la naturaleza y en las cantidades perfectas: </p>
                     <div>
                         <div class="mb-4 bg-warning"  style="width: 80px; height: 6px;">    </div>
                     </div>
-                    <div class="row">
+                    <div class="row row-cols-1 row-cols-lg-2">
+			  <div class="col d-block d-lg-none mb-3  ">
+                      		<div class="d-flex justify-content-center" >
+                        		<img class="ms-auto me-auto" src="img/nutrucion.png" width="70%" alt="">
+                    		</div>
+                    
+                	</div>
                         <div class="col">
                             <ul class="" style="list-style: none;"  >
                                
@@ -409,7 +425,7 @@
                     </div>
                     
                 </div>
-                <div class="col  ">
+                <div class="col d-none d-lg-block  ">
                     <div class="d-flex justify-content-center" >
                         <img class="ms-auto me-auto" src="img/nutrucion.png" width="70%" alt="">
                     </div>
@@ -421,24 +437,24 @@
     </div>
     
     <!-- seccion 3 iconos-->
-    <div class="container-fluid py-5" style="background-image: url(img/fondo.png); background-repeat: no-repeat; background-size: cover;  "   >
+    <div class="container-fluid py-5" id="beneficios"  style="background-image: url(img/fondo.png); background-repeat: no-repeat; background-size: cover;  "   >
         <div class="container pt-3">
             <h2 class="mulish text-uppercase"  style="font-weight: 900;" >Beneficios probables para tu cuerpo  </h2>
             <h5  class="mulish text-primary mb-5 fw-normal"> Podría ayudar a tu cuerpo a deshacerse de los kilos de más </h5>
 
-                <div class="row">
+                <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col">
                         <ul class="mb-5"  style="list-style:none;" >
                             <li>  <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Mejora la digestión</li>
-                            <li>  <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Reduce el estres y la frustración</li>
+                            <li>  <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Reduce el estrés y la frustración</li>
                             <li> <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Ayuda a mantener la regularidad </li>
-                            <li> <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Ayuda a mantener el cartilago y las articulaciones</li>
+                            <li> <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Ayuda a mantener el cartílago y las articulaciones</li>
                             <li> <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Mantiene una función pulmonar saludable</li>
                             <li> <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Promueve la relajación</li>
                             <li> <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Ayuda a mantener la flora intestinal</li>
-                            <li> <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Ayuda a mantener la funcion cardiovascular</li>
+                            <li> <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Ayuda a mantener la función cardiovascular</li>
                             <li> <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Ayuda a promover la salud del tracto urinario</li>
-                            <li> <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Ayuda a mantener los niveles de colesterol y que esten dento del rango normal</li>
+                            <li> <i class="bi bi-check2-circle fs-5 text-primary"></i>  &nbsp; Ayuda a mantener los niveles de colesterol y que estén dentro del rango normal</li>
                         </ul>
                     </div>
                     <div class="col">
@@ -453,13 +469,97 @@
         </div>
 
     </div>
+
+
+    <!--
     <div class="container-fluid py-5 bg-primary">
         <div class="container">
             <h3 class="text-warning text-center text-uppercase mulish" style="font-weight: 900;">¿Efectos secundarios?</h3>
             <h5 class="text-white text-center mulish"  style="font-weight:900 ;" > Te podrá ayudar a eliminar esos kilitos de más, y balancer tu peso ideal. </h5>
         </div>
     </div>
-    
+    -->
+
+    <style>
+        .gradient {
+  background: linear-gradient(to right, #f3c845 25%, #9d7e21 45%, #c69b18 50%, #c69b18 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+    </style>
+    <div class="container-fluid bg-light py-5 " id="vender" style="background-image: url(img/fondo3.png); background-repeat: no-repeat;  background-size: cover;" >
+        <div class="container">
+            <h3 class="text-primary text-center mulish text-center text-uppercase">¿Te gustan las ventas en el área  del bienestar?</h3>
+            <h2 class="text-center mulish text-uppercase"  style="font-weight: 900;"  >Beneficios de vender Vida Divina</h2>    
+            <h2  class="text-uppercase text-center gradient" style=" font-size: 50px; font-weight: 800 ;text-shadow: 2px 2px 11px rgba(0,0,0,0.15);">  Te pagamos el 50%  </h2>
+
+            <h4 class="text-center text-primary text-uppercase">tres veces</h4>
+            <div class="" style="max-width: 900px;  margin: 0 auto; "  >
+            <div class="row row-cols-1 row-cols-lg-3 py-4">
+                <div class="col mb-4  ">
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="bg-primary p-4 t  text-white d-flex justify-content-center shadow"    style=" align-items: center  ;border-radius:150px ;width: 200px; height: 200px;" > 
+                            <p class="text-center"> <span class="" style="font-size:50px ; font-weight: 800; line-height:3.9rem; "> 50% </span><br>Venta directa</p>
+                        </div>
+                    </div> 
+                    
+                    <div >
+                        <div class="row">
+                            <div class="col-2 ">
+                                <h4 class="text-primary" style="font-weight: 900; font-size: 60px;"  >1</h4>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="text-uppercase"  style="font-weight: 900;"> beneficio minorista del 50%  </h6>
+                                <p> Por ventas desde tu sitio web o ventas personalmente </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class=" d-flex justify-content-center  mb-4">
+                        <div class="bg-primary p-4 t  text-white d-flex justify-content-center shadow"    style=" align-items: center  ;border-radius:150px ;width: 200px; height: 200px;" > 
+                            <p class="text-center"> <span class="" style="font-size:50px ; font-weight: 800; line-height:3.9rem; "> 50% </span><br>Bono inicio rápido</p>
+                        </div>
+                    </div>
+                    
+                    <div >
+                        <div class="row">
+                            <div class="col-2 ">
+                                <h4 class="text-primary" style="font-weight: 900; font-size: 60px;"  >2</h4>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="text-uppercase"  style="font-weight: 900;"> bono de inicio rápido 50%  </h6>
+                                <p> Gana este bono por cada persona que invites y se registre  contigo para promover Té Divina</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class=" d-flex justify-content-center mb-4">
+                        <div class="bg-primary p-4 t  text-white d-flex justify-content-center shadow"    style=" align-items: center  ;border-radius:150px ;width: 200px; height: 200px;" > 
+                            <p class="text-center"> <span class="" style="font-size:50px ; font-weight: 800; line-height:3.9rem; "> 50% </span><br>Bono por facturación</p>
+                        </div>
+                    </div>
+                    
+                    <div >
+                        <div class="row">
+                            <div class="col-2 ">
+                                <h4 class="text-primary" style="font-weight: 900; font-size: 60px;"  >3</h4>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="text-uppercase"  style="font-weight: 900;"> Comisión del 50%  </h6>
+                                <p>Recibe este bono cada que un invitado tuyo realice su pedido</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
     <!--experoencia
     <div class="container-fluid py-5">
         <div class="container py-5">
@@ -477,29 +577,29 @@
     <!--compra-->
     <div class="container-fluid py-5">
         <div class="container py-5">
-            <h2 class="mulish text-center text-uppercase" style="font-weight: 900;">¿Como comprar el té divina?</h2>
-            <h5 class="mulish text-primary text-center mb-5 fw-normal" >Un asesor se pondrá en contacto contigo para guiarte con tu compra y darte mas información</h5>
-            <div class="row">
+            <h2 class="mulish text-center text-uppercase" style="font-weight: 900;">¿Cómo comprar el té divina?</h2>
+            <h5 class="mulish text-primary text-center mb-5 fw-normal" >Un asesor se pondrá en contacto contigo para guiarte con tu compra y darte más información</h5>
+            <div class="row row-cols-1 row-cols-lg-3">
                 <div class="col ">
                     <div class="mb-4 d-flex justify-content-center"  >
-                        <img src="img/mensaje.png" style="border-radius: 80px;" width="120px" alt="">
+                        <img src="img/mensaje.png" style="border-radius:100px;" width="150px" alt="">
                     </div>
                     <h5 class="mulish text-primary text-center"> Paso 1 </h5>
-                    <p class="text-center">Contactanos por whatsapp y obtenga un descuento</p>
+                    <p class="text-center">Contáctanos por whatsapp y obtén un descuento</p>
                 </div>
                 <div class="col">
                     <div class="mb-4 d-flex justify-content-center"  >
-                        <img src="img/envio.png" width="120px" style="border-radius: 80px;" alt="">
+                        <img src="img/envio.png" width="150px" style="border-radius: 100px;" alt="">
                     </div>
                     <h5 class="mulish text-primary text-center"> Paso 2 </h5>
-                    <p class="text-center"> Elija el método de pago y envio </p>
+                    <p class="text-center"> Elija el método de pago y envío </p>
                 </div>
                 <div class="col">
                     <div class="mb-4 d-flex justify-content-center"  >
-                        <img src="img/emprender.png" width="120px" style="border-radius: 80px;" alt="">
+                        <img src="img/emprender.png" width="150px" style="border-radius: 100px;" alt="">
                     </div>
                     <h5 class="mulish text-primary text-center"> Paso 3 </h5>
-                    <p class="text-center"> Recibe el produco y comienza tu negocio </p>
+                    <p class="text-center"> Recibe el producto y comienza tu negocio </p>
                 </div>
             </div>
         </div>
@@ -512,7 +612,7 @@
     
 <div class="container-fluid py-5 "  style="background-image:linear-gradient(110deg, rgba(147, 26, 37, 0.8) 20%, rgba(147, 26, 37, 0.3) 100%), url(img/fondo2.png); background-repeat: no-repeat; background-size: cover; background-position: center;   "  >
     <div class="container py-5" id="registro"  >
-        <h4 class="text-warning text-center">¿Quieres vender Té Divina en México   </h4>
+        <h4 class="text-warning text-center">¿Quieres vender Té Divina en México?   </h4>
         <h2 class=" text-white mulish h1 mb-3 text-center text-uppercase"   style="font-weight: 900;"> Regístrate aquí y comienza a vender </h2>
         
         <p class="text-white mb-5"> </p>
@@ -523,13 +623,11 @@
                 <div class="p-4 rounded border border-1 border-primary " style="background: rgba(254, 254, 254, 0.8);">
                     <h3 class="text-primary text-center  mulish mb-4">Contáctanos </h3>
                     <p class="small"> Uno de nuestros asesores te apoyara a realizar la primera compra y te pedirá tus datos asi como el proceso necesario para que puedas realizar el pago así como la información del envió    <br> <br> </p>
-
                     <div class="d-flex justify-content-center">
                         <img src="img/whatsapp.png" width="50px"   alt="">
                         
                     </div>
                     <p class="text-center fw-bold"> ¡Incia una conversación!   </p>
-
                     <div class="d-flex">
                         <div class="row  ms-auto me-auto">
                             <div class="col">
